@@ -1857,22 +1857,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Ms. Maroo\\Downloads\\pokemonreview\\PokemonReview\\PokemonReview.csproj",
+      "projectUniqueName": "C:\\Users\\Ms. Maroo\\Source\\Repos\\pokemonreview\\PokemonReview\\PokemonReview.csproj",
       "projectName": "PokemonReview",
-      "projectPath": "c:\\Users\\Ms. Maroo\\Downloads\\pokemonreview\\PokemonReview\\PokemonReview.csproj",
+      "projectPath": "C:\\Users\\Ms. Maroo\\Source\\Repos\\pokemonreview\\PokemonReview\\PokemonReview.csproj",
       "packagesPath": "C:\\Users\\Ms. Maroo\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Ms. Maroo\\Downloads\\pokemonreview\\PokemonReview\\obj\\",
+      "outputPath": "C:\\Users\\Ms. Maroo\\Source\\Repos\\pokemonreview\\PokemonReview\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ms. Maroo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Ms. Maroo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1933,7 +1935,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,9 +1,11 @@
-﻿using PokemonReview.Models;
+﻿using PokemonReview.DTOs;
+using PokemonReview.Models;
 
 namespace PokemonReview.Interfaces;
 public interface IPokemonRepository
 {
-    Task<IEnumerable<Pokemon>> GetPokemonsAsync();
+    Task<ICollection<Pokemon>> GetPokemonsAsync();
+    Task<Pokemon> GetPokemonTrimToUpper(PokemonDto pokemonDto);
     Task<Pokemon> GetPokemonByIdAsync(int id);
     Task<Pokemon> GetPokemonByNameAsync(string name);
     decimal GetPokemonByRatingAsync(int pokeId);

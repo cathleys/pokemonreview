@@ -92,13 +92,10 @@ public class PokemonController : BaseApiController
         {
                 if (pokemonDto == null) return BadRequest(ModelState);
 
-                var pokemons = await _pokemonRepository.GetPokemonsAsync();
+                var pokemons = await _pokemonRepository.GetPokemonTrimToUpper(pokemonDto);
 
-                var pokemon = pokemons.Where(p => p.Name.Trim().ToUpper()
-                == pokemonDto.Name.TrimEnd().ToUpper())
-                .FirstOrDefault();
 
-                if (pokemon != null)
+                if (pokemons != null)
                 {
                         ModelState.AddModelError("", "Pokemon already exists");
                         return StatusCode(422, ModelState);

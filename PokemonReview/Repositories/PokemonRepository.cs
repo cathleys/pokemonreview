@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PokemonReview.Data;
+using PokemonReview.DTOs;
 using PokemonReview.Interfaces;
 using PokemonReview.Models;
 
@@ -76,9 +77,18 @@ public class PokemonRepository : IPokemonRepository
         return (decimal)review.Sum(r => r.Rating) / review.Count();
     }
 
-    public async Task<IEnumerable<Pokemon>> GetPokemonsAsync()
+    public async Task<ICollection<Pokemon>> GetPokemonsAsync()
     {
         return await _context.Pokemons.OrderBy(p => p.Id).ToListAsync();
+    }
+
+    public async Task<Pokemon> GetPokemonTrimToUpper(PokemonDto pokemonDto)
+    {
+        var pokemons = await GetPokemonsAsync(); 
+
+        return pokemons
+            .Where(p => p.Name.Trim().ToUpper() == pokemonDto.Name.TrimEnd().ToUpper())
+            .FirstOrDefault();
     }
 
     public bool PokemonExist(int pokeId)

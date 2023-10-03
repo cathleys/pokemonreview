@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ebZ673urCYpV4OTyBb9Vm0Qy9dkC5Ut0zcAxo0V5+bRGklvruQ+tnwVMXU8s45pjIeQbNNV3mRn1wzW2RXUbuw==",
+  "dgSpecHash": "AC/QBtdyeFdvYv7KwIue4YHdVq82MEAwh2em2B6s+Z9raSAlxWZ/DtnllwWL/fjo488dq7GzGZVhwLN2JIp48g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ms. Maroo\\Downloads\\pokemonreview\\PokemonReview\\PokemonReview.csproj",
+  "projectFilePath": "c:\\Users\\Ms. Maroo\\source\\repos\\pokemonreview\\PokemonReview\\PokemonReview.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ms. Maroo\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Ms. Maroo\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
